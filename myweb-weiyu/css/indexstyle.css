@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+a {
+	text-decoration: none;
+	
+}
+a :hover{
+	color:aquamarine;
+}
+a :visited{
+	color: aqua;
+}
+.background {    
+		 background: url("../images/background.jpg") no-repeat center center fixed;
+         -webkit-background-size: cover;
+		-o-background-size: cover;                
+		background-size: cover;
+		}
+
+	tbody {
+/*    display: table-row-group;*/
+    vertical-align: middle;
+  
+}
+		.big {
+			width:1000px;
+			height:1450px;
+			border:1px none;
+            background-color:rgba(237,245,245,0.60);
+	        filter: alpha(opacity=80);
+            margin-top:100px;
+			margin-bottom:20px;
+			margin-left:75px;
+			margin-right:75px;
+			padding-top:50px;
+			padding-bottom: 50px;
+			padding-left:50px;
+			padding-right:50px;
+			
+		}
+		
+		.left {
+			width:600px;
+			height:1380px;
+			border-width:5px;
+			border:1px solid gray;
+/*		    background-color:#;*/
+			padding-left:20px;
+			padding-right:20px;
+			padding-top:30px;
+			padding-bottom:30px;
+			margin-right: 100px;
+			
+			float:left;
+		}
+		
+		.right {
+			width:200px;
+			height:1380px;
+			border-width:5px;
+/*			border:1px solid #E22C2F;*/
+/*            background-color: white;*/
+			float:left;
+		}
+		.top {
+			width:1000px;
+			height:100px;
+			border:1px thin black;
+			margin-bottom: 10px;
+			margin-left:70px;
+			margin-right: 50px;
+/*			padding-left:10px;*/
+			padding-right:10px;
+
+		
+		}
+/*.topinline {
+	background-color: white;
+	width:1070px;
+	height:130px;
+	padding-left: 30px;
+	margin-left: 30px;
+	margin-right:500px;
+	margin-top:10px;
+	margin-bottom: 10px;
+}*/
+		
+		.bottom {
+			width:1000px;
+			height:200px;
+			border:1px none ;
+			padding-top: 20px;
+			margin-top:100px;
+			margin-left: 75px;
+			margin-right: 50px;
+			padding-left: 50px;
+			padding-right: 50px;
+		background-color:rgba(237,245,245,0.5);
+		}
+.bottomtable {
+    width: 70%;
+    border: 1px none #D0E8FF;
+    margin: 0px auto;
+/*	background-color:rgba(237,245,245,0.5);*/
+	
+}
+.sentence {
+	width:560px;
+	height:50px;
+/*background-color:#B8B8B0;*/
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+	/*设置div样式的整体布局*/
+	.page-icon{
+		margin:20px 0 0 0;/*设置距离顶部20像素*/
+		font-size:0;/*修复行内元素之间空隙间隔*/
+		text-align:center;/*设置内容居中显示*/
+	}
+	
+	/*设置共有的的样式布局，主要是进行代码优化，提高运行效率*/
+	.page-icon a,.page-disabled,.page-next{
+		border:1px solid #ccc;
+		border-radius:3px;
+		padding:4px 10px 5px;
+		font-size:14PX;/*修复行内元素之间空隙间隔*/
+		margin-right:10px;
+	}
+	
+	/*对 a 标签进行样式布局 */
+	
+	.page-icon a{
+		text-decoration:none;/*取消链接的下划线*/
+		color:#005aa0;
+	}
+	
+	.page-current{
+		color:#ff6600;
+		padding:4px 10px 5px;
+		font-size:14PX;/*修复行内元素之间空隙间隔*/
+	}
+	
+	.page-disabled{
+		color:#ccc;
+	}
+	
+	.page-next i,.page-disabled i{
+		cursor:pointer;/*设置鼠标经过时的显示状态为小手状态*/
+		display:inline-block;/*设置显示的方式为行内块元素*/
+		width:5px;
+		height:9px;
+		background-color: #635B5B;
+	}
+	.page-disabled i{
+		background-position:-80px -608px;
+		margin-right:3px;
+	}
+ 
+	.page-next i{
+		background-position:-62px -608px;
+		margin-left:3px;
+	}
+	
+
+
+

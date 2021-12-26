@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>weiyu</title>
+	
+<link rel="stylesheet" href="css/indexstyle.css">
+	<style>
+			body {
+				background: url(images/background.jpg) no-repeat center center fixed;
+				/*兼容浏览器版本*/
+                -webkit-background-size: cover;
+				-o-background-size: cover;                
+				background-size: cover;
+				
+
+
+			}
+		</style>
+
+
+</head>
+<!--background="images/bubble.jpg"-->
+<body 	  class="background">
+	<div class="top">
+		
+			<p style="font-size:11pt"><img src="images/ourtitle.jpg"  alt="味愚" width="125">&nbsp;&#160;&emsp;读尽床头几卷书，占得人间一味愚</p>		
+	</div>
+
+	<div class="big" >
+  <div>
+	<div align="left" class="left" style="height: 800px">
+		<p align="center">每日优读</p> <hr>
+		<p class="sentence">我们的忧愁将会崩解，灵魂将会穿梭如风。         ——聂鲁达</p><hr>
+		<p class="sentence">去掉大部分形容词，剩下的大概就是真相了。 ——《杀死一只知更鸟》</p><hr>
+		<p class="sentence">他懂黑暗，却使音乐响起。</p><hr>
+		<p class="sentence">对任何单一事物的沉溺都足以证明我们自身的脆弱以及生活的乏味，无论这个事物本身多么的正确。</p><hr>
+		<p class="sentence">所有生命的美丽化作一句“圣诞快乐”，然后满天飞起洁白的雪花，飘落这世间每个干净与不干净的角落。</p><hr>
+		<div class="page-icon">
+	<span class="pre"><i></i>上一页</span>
+    <span class="page-current">1</span>
+    <a href="pagetwo.html">2</a>
+    <a class="next" href="pagetwo.html">下一页<i></i></a>
+</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#pre").click(function() {
+			var t_pre=<%=curpage%>;//获取当前页面页码
+			if(t_pre==1)
+				$(this).attr("href","#");
+			else{
+				var pre =t_pre-1;		
+				$(this).attr("href","fenlei.jsp?page="+pre);//jQuery给属性设置值
+			}
+		});
+	
+		$("#next").click(function() {
+			var max = <%=totalpage%>;
+			var cur=<%=curpage%>;
+			if(cur==max)
+				$(this).attr("href","#");
+			else{
+				var pre =cur+1;	
+				$(this).attr("href","fenlei.jsp?page="+pre);
+			}
+		});
+
+	});
+</script>
+
+		
+	</div>
+	<div  class="right"  >
+        <h3>分类</h3>
+        <ul>
+         <li>
+	      <a href="movies.html" target="_self">影视</a>
+         </li>
+         <li>
+	       <a href="books.html" target="_self" >小说</a>
+         </li>
+         <li>
+	       <a href="popular.html" target="_self" >网络流行</a>
+          </li>
+           <li>
+	        <a href="motto.html" target="_self">名人名言</a>
+           </li>
+			<li>
+	        <a href="poems.html" target="_self" >古诗词</a>
+           </li>
+			<li>
+	        <a href="sanwen.html" target="_self" >散文</a>
+           </li>
+            </ul>
+		   </div>
+		<div style="clear:both"></div>
+	  </div>
+  </div>
+
+	<div class="bottom">
+	  <table class="bottomtable" cellspacing="0" cellpadding="8" style="font-size: 10pt">
+		  
+			  <tr>
+				  <td>古典</td>
+				  <td ><a href="red.html" target="_blank">红楼梦</a></td>
+				  <td ><a href="fushengliuji.html" target="_blank">浮生六记</a></td>
+				  <td ><a href="zhuangzi.html" target="_blank">庄子</a></td>
+			  </tr>
+			  <tr>
+				  <td>近现代</td>
+			  <td><a href="nanxingji.html" target="_blank">南行记</a></td>
+				<td><a href="nahan.html" target="_blank">呐喊</a></td>
+				  <td><a href="xiyu.html" target="_blank">在细雨中呼喊</a></td>
+				
+			  </tr>
+			  <tr>
+				  <td>国外名著</td>
+			  <td><a href="qunxing.html" target="_blank">人类群星闪耀时</a></td>
+				<td><a href="flyaway.html" target="_blank">飘</a></td>
+				  <td><a href="john.html" target="_blank">约翰·克里斯多夫</a></td>
+			
+			  </tr>
+			  
+		  
+		  
+		</table>
+	  </div>
+</body>
+</html>
